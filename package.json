@@ -1,0 +1,15 @@
+{
+  "name": "lcu-student-portal",
+  "version": "1.0.0",
+  "description": "Lead City University Student Portal - MERN Stack",
+  "scripts": {
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
